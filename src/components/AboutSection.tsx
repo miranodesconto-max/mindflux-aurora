@@ -82,12 +82,8 @@ export const AboutSection = () => {
           {/* Right Column - Founder Card */}
           <div className="glass-card p-8 lg:p-10 hover-lift">
             <div className="text-center mb-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-2 border-primary/30">
-                <img 
-                  src="/src/assets/samuel-fonseca.jpg" 
-                  alt="Samuel Fonseca - Sócio-fundador da MindFlux IA"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-gold flex items-center justify-center text-4xl">
+                👨‍💻
               </div>
               <h3 className="text-2xl font-heading font-bold mb-2">
                 Samuel Fonseca

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { CheckCircle, Clock, Users, Shield } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import whatsappMockup from "@/assets/whatsapp-chat.jpg";
+import robotDentist from "@/assets/robot-dentist.jpg";
 
 const badges = [
   { icon: Clock, text: "Implementação Rápida" },
@@ -67,14 +67,14 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Column - WhatsApp Mockup */}
+          {/* Right Column - Robot Dentist */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-gold rounded-3xl opacity-20 blur-xl animate-pulse" />
               <div className="relative glass-card p-4 rounded-3xl hover-lift">
                 <img
-                  src={whatsappMockup}
-                  alt="Interface do WhatsApp Business com IA da MindFlux confirmando consulta odontológica"
+                  src={robotDentist}
+                  alt="Robô dentista com IA da MindFlux segurando smartphone com WhatsApp"
                   className="w-full max-w-sm rounded-2xl shadow-lift"
                 />
               </div>
