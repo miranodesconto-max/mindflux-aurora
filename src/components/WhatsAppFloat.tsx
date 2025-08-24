@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de saber mais sobre a MindFlux AI para minha clínica odontológica.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5571984264435?text=${message}`, '_blank');
   };
 
   return (

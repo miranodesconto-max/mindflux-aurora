@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Star, Zap } from "lucide-react";
+import { CheckCircle, Star, Zap, Shield } from "lucide-react";
 
 const plans = [
   {
@@ -69,14 +69,18 @@ export const PlansSection = () => {
       <div className="container relative mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading font-bold mb-6">
-            Planos & <span className="text-gradient-gold">Preços</span>
+            Planos que <span className="text-gradient-gold">fazem a diferença</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Escolha o plano ideal para o tamanho e necessidades da sua clínica
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
+            Escolha o plano ideal para sua clínica. Sem fidelidade obrigatória, 
+            valores variam conforme volume e integrações.
           </p>
-          <p className="text-sm text-muted-foreground">
-            Valores variam conforme volume e integrações • Sem fidelidade obrigatória
-          </p>
+          <div className="inline-flex items-center px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full">
+            <Shield className="h-4 w-4 text-green-400 mr-2" />
+            <span className="text-green-400 font-medium text-sm">
+              Garantia de resultado - se a IA não entregar melhora no seu atendimento, devolvemos seu dinheiro
+            </span>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">

@@ -3,12 +3,12 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { CheckCircle, Clock, Users, Shield } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import whatsappMockup from "@/assets/whatsapp-mockup.jpg";
+import whatsappMockup from "@/assets/whatsapp-chat.jpg";
 
 const badges = [
-  { icon: Clock, text: "Implantação rápida" },
-  { icon: Shield, text: "LGPD-ready" },
-  { icon: Users, text: "Atende dezenas simultaneamente" }
+  { icon: Clock, text: "Implementação Rápida" },
+  { icon: Users, text: "atende em segundos seus pacientes" },
+  { icon: Shield, text: "mais agendamentos" }
 ];
 
 export const HeroSection = () => {

@@ -44,9 +44,20 @@ export const Footer = () => {
                 Atendimento 24/7 para clínicas odontológicas.
               </p>
 
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 mb-4">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 <span className="text-sm text-green-400">Sistema online</span>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <a 
+                  href="https://www.instagram.com/omindfluxai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                >
+                  @omindfluxai
+                </a>
               </div>
             </div>
 
@@ -101,7 +112,7 @@ export const Footer = () => {
                       WhatsApp
                     </p>
                     <p className="text-foreground font-medium">
-                      (11) 99999-9999
+                      (71) 98426-4435
                     </p>
                   </div>
                 </div>
@@ -113,7 +124,7 @@ export const Footer = () => {
                       Email
                     </p>
                     <p className="text-foreground font-medium">
-                      contato@mindflux.ai
+                      contatomindfluxai@gmail.com
                     </p>
                   </div>
                 </div>
