@@ -140,6 +140,7 @@ export const PlansSection = () => {
                 variant={plan.variant} 
                 size="lg" 
                 className="w-full"
+                onClick={() => window.open('https://wa.me/5571984264435?text=Gostaria%20de%20agendar%20uma%20demonstração', '_blank')}
               >
                 {plan.cta}
               </Button>

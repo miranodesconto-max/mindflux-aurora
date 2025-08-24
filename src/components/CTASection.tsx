@@ -44,6 +44,7 @@ export const CTASection = () => {
               variant="hero" 
               size="xl" 
               className="text-lg px-12 py-6 h-auto gold-glow-strong group"
+              onClick={() => window.open('https://wa.me/5571984264435?text=Gostaria%20de%20agendar%20uma%20demonstração', '_blank')}
             >
               Ativar Minha IA
               <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />

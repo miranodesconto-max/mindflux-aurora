@@ -69,7 +69,11 @@ export const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.open('https://wa.me/5571984264435?text=Gostaria%20de%20agendar%20uma%20demonstração', '_blank')}
+              >
                 Agendar Demonstração
               </Button>
             </div>
@@ -108,7 +112,12 @@ export const Navbar = () => {
                   </Link>
                 ))}
                 <div className="pt-4">
-                  <Button variant="hero" size="lg" className="w-full">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full"
+                    onClick={() => window.open('https://wa.me/5571984264435?text=Gostaria%20de%20agendar%20uma%20demonstração', '_blank')}
+                  >
                     Agendar Demonstração
                   </Button>
                 </div>

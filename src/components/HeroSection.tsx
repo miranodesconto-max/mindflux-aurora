@@ -44,7 +44,12 @@ export const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="gold-glow-strong">
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="gold-glow-strong"
+                onClick={() => window.open('https://wa.me/5571984264435?text=Gostaria%20de%20agendar%20uma%20demonstração', '_blank')}
+              >
                 Agendar Demonstração
               </Button>
               <Button variant="outline" size="xl">
