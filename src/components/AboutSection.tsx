@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Award, Users, TrendingUp, Code, Brain, Target } from "lucide-react";
+import samuelPortrait from "@/assets/samuel-fonseca-portrait.jpg";
 
 const achievements = [
   "+50 empresas atendidas no Brasil",
@@ -82,8 +83,13 @@ export const AboutSection = () => {
           {/* Right Column - Founder Card */}
           <div className="glass-card p-8 lg:p-10 hover-lift">
             <div className="text-center mb-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-gold flex items-center justify-center text-4xl">
-                👨‍💻
+              <div className="relative w-24 h-24 mx-auto mb-6">
+                <div className="absolute -inset-2 bg-gradient-gold rounded-full opacity-30 blur-md" />
+                <img
+                  src={samuelPortrait}
+                  alt="Samuel Fonseca, Sócio-fundador da MindFlux IA"
+                  className="relative w-full h-full object-cover rounded-full border-2 border-primary/20 shadow-lift"
+                />
               </div>
               <h3 className="text-2xl font-heading font-bold mb-2">
                 Samuel Fonseca
