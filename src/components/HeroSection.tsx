@@ -52,7 +52,17 @@ export const HeroSection = () => {
               >
                 Agendar Demonstração
               </Button>
-              <Button variant="outline" size="xl">
+              <Button 
+                variant="outline" 
+                size="xl"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector('#planos');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 Ver Planos
               </Button>
             </div>
