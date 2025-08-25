@@ -4,55 +4,44 @@ import { CheckCircle, Star, Zap, Shield } from "lucide-react";
 
 const plans = [
   {
-    name: "Essencial",
+    name: "Start",
     description: "Perfeito para clínicas que estão começando com IA",
     price: "Consultar",
     period: "mensais",
     features: [
-      "Atendimento 24/7 no WhatsApp",
-      "Base de respostas configurada",
-      "1 agenda / 1 número",
-      "Relatórios mensais",
-      "Suporte por email",
-      "Treinamento básico"
+      "Atendimento automático no WhatsApp 24/7",
+      "Agendamento simples de consultas",
+      "Respostas para perguntas básicas (endereço, horário, convênios)"
     ],
-    cta: "Começar Essencial",
+    cta: "Começar Start",
     variant: "outline" as const,
     popular: false
   },
   {
-    name: "Profissional",
+    name: "Basic",
     description: "A escolha mais popular para clínicas em crescimento",
     price: "Consultar",
     period: "mensais",
     features: [
-      "Tudo do Essencial",
-      "Pré-agendamento inteligente",
-      "Lembretes automáticos",
-      "Até 3 agendas / 1–2 números",
-      "Relatórios semanais + otimizações",
-      "Suporte prioritário",
-      "Follow-up automatizado",
-      "Dashboard avançado"
+      "Tudo do Start",
+      "Personalização da persona da IA (tom de voz, nome da atendente virtual)",
+      "Integração com agenda online (Google Calendar, sistema simples de clínica)"
     ],
-    cta: "Assinar Profissional",
+    cta: "Assinar Basic",
     variant: "hero" as const,
     popular: true
   },
   {
-    name: "Enterprise",
+    name: "Premium",
     description: "Solução completa para redes e clínicas grandes",
     price: "Consultar",
     period: "mensais",
     features: [
-      "Workflows avançados",
-      "Campanhas de reativação",
-      "Fila de espera inteligente",
-      "Integrações (CRM/ERP)",
-      "Follow-up infinito",
-      "Suporte 24/7",
-      "Treinamento da equipe",
-      "Consultoria estratégica"
+      "Tudo do Basic",
+      "Fluxos avançados: reativação de pacientes, fila de espera",
+      "Campanhas sazonais (ex: mês das mães, Black Friday)",
+      "Follow UP Infinito",
+      "Suporte prioritário"
     ],
     cta: "Falar com Especialista",
     variant: "premium" as const,

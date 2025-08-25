@@ -4,15 +4,12 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/como-funciona", label: "Como Funciona" },
-  { href: "/solucoes", label: "Soluções" },
-  { href: "/planos", label: "Planos" },
-  { href: "/resultados", label: "Resultados" },
-  { href: "/integracoes", label: "Integrações" },
-  { href: "/sobre", label: "Sobre" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contato", label: "Contato" }
+  { href: "#home", label: "Home" },
+  { href: "#como-funciona", label: "Como Funciona" },
+  { href: "#solucoes", label: "Soluções" },
+  { href: "#planos", label: "Planos" },
+  { href: "#resultados", label: "Resultados" },
+  { href: "#sobre", label: "Sobre" }
 ];
 
 export const Navbar = () => {
@@ -53,17 +50,20 @@ export const Navbar = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
-                <Link
+                <a
                   key={link.href}
-                  to={link.href}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                    location.pathname === link.href
-                      ? "text-primary"
-                      : "text-muted-foreground"
-                  }`}
+                  href={link.href}
+                  className="text-sm font-medium transition-colors duration-200 hover:text-primary text-muted-foreground"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector(link.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                 >
                   {link.label}
-                </Link>
+                </a>
               ))}
             </div>
 
@@ -98,18 +98,21 @@ export const Navbar = () => {
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col space-y-4">
                 {navLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.href}
-                    to={link.href}
-                    className={`text-base font-medium transition-colors duration-200 hover:text-primary ${
-                      location.pathname === link.href
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    href={link.href}
+                    className="text-base font-medium transition-colors duration-200 hover:text-primary text-muted-foreground"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.querySelector(link.href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                      setIsMobileMenuOpen(false);
+                    }}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
                 <div className="pt-4">
                   <Button 
